@@ -1,0 +1,61 @@
+body {
+  background: url('background2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #FDF9C5;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+
+.color {
+  color: #FDF9C5;
+}
+
+.logo {
+  height: 35px;
+  vertical-align: middle;
+  margin-right: -5px;
+}
+
+.login-title {
+  position: relative;
+  left: -30px;
+  top: -20px;
+}
+
+.login-title h1 {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  background-color: #7DD46C;
+  border: 1px solid #64AA56;
+}
+
+.form-control:focus {
+  background-color: #7DD46C;
+  border-color: #64AA56;
+  box-shadow: 0 0 5px #64AA56;
+}
+
+.form-control::placeholder {
+  color: #00000080;
+}
+
+.submit {
+  margin-top: 1rem;
+  background-color: #64AA56;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .login-title {
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+}

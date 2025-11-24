@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stories | MYITRA</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="../home_page/home_page.html">
+      <img src="MYITRA_Logo-removebg-preview 1.png" alt="MYITRA Logo" class="logo">
+      <span class="fw-bold brand-text ms-0">YITRA</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+
+          <li class="nav-item"><a class="nav-link" id="home-link" href="../home_page/home_page.html">Home</a></li>
+
+          <li class="nav-item"><a class="nav-link" id="aboutus-link" href="../About_us_page/about_us.html">About Us</a></li>
+
+          <li class="nav-item"><a class="nav-link active" id="whychooseus-link" href="../stories_page/stories.html">Stories</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="../Product_catalog_page/product_catalog.html">Catalog</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="../product_detail/product_detail.html">Product Detail</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="../contact_us_page/contact_us.html">Contact Us</a></li>
+
+          <div class="icon-group">
+          <!-- CART -->
+          <li class="nav-item ms-4">
+            <a href="../product_cart_page/product_cart.html"><i class="bi bi-cart3"></i></a>
+          </li>
+
+          <!-- SEARCH -->
+          <li class="nav-item ms-4"><a><i class="bi bi-search"></i></a></li>
+
+          <!-- PROFILE -->
+          <li class="nav-item ms-4"><a><i class="bi bi-person"></i></a></li>
+          </div>
+
+        </ul>
+      </div>
+  </div>
+</nav>
+
+<section class="hero text-center text-white d-flex align-items-center justify-content-center"
+style="background-image: url('istockphoto-1639553609-612x612 1.jpg');">
+  <div>
+    <h1>Why Choose Us</h1>
+    <p class="lead" style="max-width: 1200px;">
+      At Myitra, we are dedicated to providing eco-friendly hygiene products that promote sustainability 
+      and well-being. Our carefully curated selection includes biodegradable soaps, reusable sanitary pads, 
+      and bamboo toothbrushes. We believe in making a positive impact on the environment without compromising 
+      on quality. With Myitra, you can make a difference with every purchase, contributing to a greener future 
+      for all. Join us in our mission towards a cleaner planet.
+    </p>
+  </div>
+</section>
+
+<section class="who-we-are py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Who are We</h2>
+    <p class="mx-auto" style="max-width: 800px;">
+      MYITRA Social Enterprise is dedicated to empowering B40 communities by addressing challenges in hygiene, 
+      education, and employment. Through sustainable, community-driven initiatives like the Kotak Cantik 
+      MYITRA strives to improve living standards while promoting dignity, health, and opportunity for all.
+    </p>
+  </div>
+</section>
+
+<section class="impact py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Our Impact</h2>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h4 class="text-dark">Raise Awareness</h4>
+        <p>Period poverty is not only about products — it is also about knowledge and breaking taboos. We actively run campaigns, workshops, and discussions to raise awareness about  menstrual health. By bringing these conversations into schools, universities, and local communities, we aim to educate, reduce stigma, and inspire positive change in society</p>
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="text-dark">Encourage Community Engagement</h4>
+        <p>Our work encourages people to come together for a common cause. Volunteers, donors, and partners join us in creating an ecosystem of support that amplifies our mission. This collective effort strengthens the community spirit and gives individuals an opportunity to directly contribute towards eliminating period poverty.</p>
+      </div>
+    </div>
+
+    <div class="row g-5 mt-4">
+      <div class="col-md-6">
+        <h4 class="text-dark">Supporting B40 Communities</h4>
+        <p>At Myitra, we are dedicated to addressing the struggles of the B40 community in Malaysia, especially women who face barriers in accessing basic hygiene products. Through our Kotak Cantik boxes, we provide affordable and essential care items that reduce the financial burden on families and ensure that women can live with dignity and confidence.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="text-dark">Driving Long-Term Impact</h4>
+        <p>The impact of our work goes beyond immediate relief. By ensuring girls can stay in school, women can participate fully in society, and families can manage essential needs at lower costs, we are shaping a sustainable future. Moving forward, we aim to expand our reach, introduce eco-friendly hygiene solutions, and build partnerships that will multiply our positive impact across Malaysia.</p>
+      </div>
+    </div>
+
+    <!-- ⭐ ADDED: Container for Supabase dynamic stories → Safe addition -->
+    <div id="storiesContainer" class="mt-5"></div>
+
+  </div>
+</section>
+
+<footer class="footer text-white py-4">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-md-4 mb-3">
+        <img src="MYITRA_Logo-removebg-preview 1.png" alt="Myitra Logo" class="footer-logo mb-3">
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none">All Rights Reserved</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms Of Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h4 class="mb-3">Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="../home_page/home_page.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="../Product_catalog_page/product_catalog.html" class="text-white text-decoration-none">Products</a></li>
+          <li><a href="../contact_us_page/contact_us.html" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="../stories_page/stories.html" class="text-white text-decoration-none">Stories</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h4 class="mb-3">Contact Us</h4>
+        <p class="mb-1">Myitra Social Organization Sdn Bhd.</p>
+        <p class="mb-1">Address:</p>
+        <p class="mb-1">Email:</p>
+        <p class="mb-1">Open from Monday to Saturday,</p>
+        <p class="mb-0">10am to 6pm.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ⭐ ADDED: Supabase Stories Loader (Safe, No UI Change) -->
+<script type="module" src="stories-supabase.js"></script>
+
+</body>
+</html>
